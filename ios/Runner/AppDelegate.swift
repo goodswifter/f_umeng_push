@@ -8,7 +8,7 @@ import Flutter
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
-    UMConfigure.initWithAppkey("62f9abcc79848655fadc253a", channel: nil);
+    UMConfigure.initWithAppkey("62f32d4479848655fad4f316", channel: nil);
       
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }

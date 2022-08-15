@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     UmengCommonSdk.initCommon(
-        '62f32741bd3e424d1c2caed7', '62f9abcc79848655fadc253a', 'dev');
+        '62f32741bd3e424d1c2caed7', '62f32d4479848655fad4f316', 'dev');
     // UmengCommonSdk.setPageCollectionModeManual();
     UmengPushSdk.register();
     UmengPushSdk.setPushEnable(true);
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
   /// 获取有盟的注册ID
   Future<String?> getUmRegisterId() async {
     final String? deviceToken = await UmengPushSdk.getRegisteredId();
-    print('UM_TOKEN:$deviceToken');
+    debugPrint('UM_TOKEN:$deviceToken');
     return deviceToken;
   }
 }
